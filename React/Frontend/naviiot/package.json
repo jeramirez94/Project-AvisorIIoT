@@ -1,0 +1,30 @@
+{
+  "name": "naviiot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.5",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "i18next": "^22.5.0",
+    "kioskboard": "^2.3.0",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-datepicker": "^4.15.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.3.1",
+    "react-select": "^5.7.2",
+    "react-super-responsive-table": "^5.2.1",
+    "typescript": "5.0.3"
+  }
+}

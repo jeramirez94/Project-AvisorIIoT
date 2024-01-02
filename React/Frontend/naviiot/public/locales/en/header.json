@@ -1,0 +1,17 @@
+{
+
+    "Machine":"Machine",
+
+    "Product":"Product",
+
+    "Compliance":"Compliance",
+
+    "Speed":"Speed",
+
+    "Status":"Status",
+
+    "Running":"Running",
+
+    "Stopped":"Stopped"
+
+}

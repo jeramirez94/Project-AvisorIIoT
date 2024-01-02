@@ -1,0 +1,1 @@
+CREATE TABLE AswSch.AswCatArticuloCaracteristicas(ClaArticulo int,ClaPlantilla int,NomPlantilla varchar(250),NomPlantillaIngles varchar(250),ClaCaracteristica int,NomCaracteristica varchar(100),NomCaracteristicaIngles varchar(100),NomValorCaract varchar(250),NomValorCaractIngles varchar(250),BajaLogica int,FechaBajaLogica datetime,FechaUltimaMod datetime)

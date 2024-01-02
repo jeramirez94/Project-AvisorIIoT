@@ -1,0 +1,179 @@
+USE [ASW]
+GO
+
+/****** Object:  StoredProcedure [AswSch].[ASW_CU152_Pag6_Grid_CfgConfiguracion_IU]    Script Date: 05/06/2020 01:49:47 p. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+--
+--Consumir TraMateriaPrima
+--Replicar a MCSW
+
+--EXEC StoredProcedure ASWSch.ASW_CU152_Pag6_Grid_CfgConfiguracion_IU  
+
+ALTER PROC [AswSch].[ASW_CU152_Pag6_ConsumirMateriaPrima_Proc]
+	   --@pnClaUbicacion INT,
+	   @pnIdCelda INT,
+	   @pnTurnoActual INT,
+	   @psBarcode VARCHAR(50),
+	   @psNombrePcMod VARCHAR(64),
+	   @pnClausuarioMod INT
+
+AS
+BEGIN
+
+SET XACT_ABORT ON--solo desarrollo
+
+	DECLARE 
+		@nClaAreaProduccion INT
+		,@nClaveCelda INT
+		,@nIdReferencia INT
+
+	DECLARE 
+		@ErrorMessage  NVARCHAR(4000)
+		,@ErrorSeverity INT
+		,@ErrorState    INT
+
+	DECLARE
+		@nEsTransaccionPropia INT
+
+	SELECT @nClaAreaProduccion = ClaAreaProduccion
+		,@nClaveCelda = ClaveCelda
+	FROM [AswSch].[AswCatCeldas]
+	WHERE IdCelda = @pnIdCelda
+
+	IF (@@TRANCOUNT = 0)  
+	BEGIN  		
+		SET @nEsTransaccionPropia = 1  
+	END
+	ELSE
+	BEGIN
+		SET @nEsTransaccionPropia = 0
+	END
+	
+
+	IF @nEsTransaccionPropia = 1
+	BEGIN
+		BEGIN TRAN		
+
+	END
+	BEGIN TRY
+	
+
+	   EXEC  [MSW_LNKSVR].[MCSW_Integra].[MSWSch].[MSW_ConsumirAlambreASW_Proc] 
+			@pnIdNumDepto		= @nClaAreaProduccion
+			,@pnTurno			= @pnTurnoActual
+			,@pnIdCelda			= @nClaveCelda
+			,@pnAccionRemTag    = 2--consumir
+			,@psTagAEliminar	= @psBarcode
+			,@psNombrePcMod		= @psNombrePcMod
+			,@pnClaUsuarioMod	= @pnClaUsuarioMod
+
+		SELECT 1 AS Exito
+			
+	END TRY 
+	BEGIN CATCH
+	
+		SELECT 
+			@ErrorMessage = ERROR_MESSAGE(), 
+			@ErrorSeverity = ERROR_SEVERITY(), 
+			@ErrorState = ERROR_STATE();
+  
+		IF @nEsTransaccionPropia = 1
+		BEGIN
+			IF @@TRANCOUNT > 0  
+				ROLLBACK TRANSACTION;
+		END  	
+
+		RAISERROR(@ErrorMessage, @ErrorSeverity, @ErrorState);
+		RETURN
+	END CATCH; 
+  
+  --desarrollo: limpio la bd MCSW para poder probar con la misma etiqueta
+  delete [MSW_LNKSVR].[MCSW_Integra].[MSWSch].[MSWTraCeldaBackLog4]
+  where idCelda=4 and idReferencia=1749719
+
+  IF @nEsTransaccionPropia = 1
+  BEGIN
+	IF @@TRANCOUNT > 0  
+		COMMIT TRANSACTION  
+  END
+  
+	--IF @nEsTransaccionPropia = 1
+	--BEGIN
+	--IF @@TRANCOUNT > 0  
+	--	ROLLBACK TRANSACTION  --para prueba en desarrollo
+	--END
+
+END
+GO
+
+--begin tran
+
+--exec [AswSch].[ASW_CU152_Pag3_AgregarMateriaPrima_Proc]
+--	   --@pnClaUbicacion INT,
+--	   @pnIdCelda =4,
+--	   @pnTurnoActual =1,
+--	   @psBarcode ='113577TIIWQ',
+--	   @psNombrePcMod ='mrc',
+--	   @pnClausuarioMod =0
+
+--EXEC  [MSW_LNKSVR].[MCSW_Integra].[MSWSch].[MSW_CU423_Pag2AfectacionAlam_Sel] 
+--@pnnpCelda =1, 
+--@pnTurno  =1,
+--@pnIdNumDepto =2 
+
+
+
+
+--	   EXEC  [MSW_LNKSVR].[MCSW_Integra].[MSWSch].[MSW_ConsumirAlambreASW_Proc] 
+--			@pnIdNumDepto		= 2
+--			,@pnTurno			= 1
+--			,@pnIdCelda			= 1
+--			,@pnAccionRemTag    = 1--1remover 2consumir
+--			,@psTagAEliminar		= '113577TIIWQ'
+--		    ,@psNombrePcMod ='mrc'
+--		    ,@pnClausuarioMod =0
+
+
+--EXEC  [MSW_LNKSVR].[MCSW_Integra].[MSWSch].[MSW_CU423_Pag2AfectacionAlam_Sel] 
+--@pnnpCelda =1, 
+--@pnTurno  =1,
+--@pnIdNumDepto =2 
+
+--exec [AswSch].[ASW_CU152_Pag3_AgregarMateriaPrima_Proc]
+--	   --@pnClaUbicacion INT,
+--	   @pnIdCelda =4,
+--	   @pnTurnoActual =1,
+--	   @psBarcode ='113577TIIWQ',
+--	   @psNombrePcMod ='mrc',
+--	   @pnClausuarioMod =0
+	   
+
+--EXEC  [MSW_LNKSVR].[MCSW_Integra].[MSWSch].[MSW_CU423_Pag2AfectacionAlam_Sel] 
+--@pnnpCelda =1, 
+--@pnTurno  =1,
+--@pnIdNumDepto =2 
+
+--	  -- EXEC  [MSW_LNKSVR].[MCSW_Integra].[MSWSch].[MSW_ConsumirAlambreASW_Proc] 
+--			--@pnIdNumDepto		= 2
+--			--,@pnTurno			= 1
+--			--,@pnIdCelda			= 1
+--			--,@pnAccionRemTag    = 1--remover
+--			--,@psTagAEliminar		= '113577TIIWQ'
+--		 --   ,@psNombrePcMod ='mrc'
+--		 --   ,@pnClausuarioMod =0
+
+--rollback tran
+
+
+
+
+
+
+
+
+

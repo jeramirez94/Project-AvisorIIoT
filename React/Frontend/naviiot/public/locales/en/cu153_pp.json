@@ -1,0 +1,15 @@
+{
+    "pageTitle":"Production Program",
+    "Order":"Order",
+    "Done":"Done",
+    "toDo":"To Do",
+    "Start":"Start",
+    "modalInicioTitulo":"You are about to change the production order on",
+    "modalInicioCancelar":"Cancel",
+    "modalInicioIniciar":"Start Order",
+    "ttOPM":"to the OPM",
+    "with":"with",
+    "modalExitoTitulo":"Notification",
+    "modalExitoMensaje":"The production order was started",
+    "modalExitoAceptar":"Accept"
+}

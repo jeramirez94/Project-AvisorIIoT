@@ -1,0 +1,22 @@
+.numberNav::-webkit-outer-spin-button,
+.numberNav::-webkit-inner-spin-button 
+{
+      -webkit-appearance: none;
+        margin: 0;
+}
+.numberNav{
+    
+    font-size: 25px;
+}
+.buttons{
+    width: 100px;
+    height: 60px;
+}
+.loading{
+    width: 45%;
+    height: 45%;
+}
+.spinner{
+    height: 80px;
+    width: 80px;
+}

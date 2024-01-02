@@ -1,0 +1,13 @@
+--raspberry
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(4,7,'HEADER_1','Raspberry',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','HEADER',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(17,11,'THREADER_1','Raspberry',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','THREADER',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(27,13,'COLLATOR_1','Raspberry',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','COLLATOR',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(22,15,'VISION_STRIP_1','Raspberry',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','VISION_STRIP',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(5,29,'VISION_REJECTED_1','Raspberry',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','VISION_REJECTED',1)
+
+--comfile
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(4,4,'HEADER_1','Comfile',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','HEADER',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(5,5,'THREADER_1','Comfile',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','THREADER',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(6,6,'COLLATOR_1','Comfile',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','COLLATOR',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(7,7,'VISION_STRIP_1','Comfile',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','VISION_STRIP',1)
+INSERT [AswSch].[AswCatGpio] ([GPIO],[Pin],[Entrada],[Dispositivo],[BajaLogica],[FechaBajaLogica],[ClaUsuarioMod],[NombrePcMod],[FechaUltimaMod],[Origen],[Posicion])VALUES(8,8,'VISION_REJECTED_1','Comfile',0,NULL,0,'carga inicial','Feb 15 2022 12:00:00:000AM','VISION_REJECTED',1)

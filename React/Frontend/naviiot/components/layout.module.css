@@ -1,0 +1,16 @@
+.mainVertical{
+    overflow-y: auto;
+}
+
+.contentVertical{
+    overflow-y: auto;
+}
+
+.mainHorizontal{
+    overflow-y: auto;
+}
+
+.footerTogglerContainer{
+    width: 100%;
+    height: auto;
+}

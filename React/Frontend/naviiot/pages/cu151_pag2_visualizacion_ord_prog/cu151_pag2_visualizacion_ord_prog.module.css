@@ -1,0 +1,85 @@
+.opmcompleto {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contenedorinfoopm {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #172d46;
+  width: 100%;
+  margin-top: 1vh;
+}
+
+.contenedorheaderopm {
+  display: flex;
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+}
+
+.caracteristicasprincipales {
+  padding-top: 3vh;
+  display: flex;
+  width: 100%;
+}
+
+.caracteristicasprincipalesO {
+  display: flex;
+  align-items: center;
+}
+
+.caracteristicasdentroP {
+  font-family: Arial, Helvetica, sans-serif;
+  width: auto;
+  flex: 1;
+  display: flex;
+  margin-left: 1vh;
+}
+
+.caracteristicasdentroI {
+  background-color: #0062cc;
+  display: flex;
+  flex: 1;
+  width: auto;
+}
+
+.caracteristicastodas {
+  padding-top: 2vh;
+  display: flex;
+}
+
+.contenedorcprincipales {
+  display: flex;
+}
+
+.nombreOpm {
+  color: #172d46;
+  font-weight: 500;
+  margin-top: 1vh;
+  margin-left: 3vh;
+  flex: 2;
+}
+
+.barraprogreso {
+  color: #172d46;
+  font-size: 1.5vw;
+  flex: 2;
+  margin-top: 2vh;
+  padding-left: 1vw;
+}
+
+.unidadesrestantes {
+  color: #172d46;
+  font-weight: 500;
+  margin-top: 1vh;
+  margin-left: 1.5vh;
+  flex: 2.5;
+}
+
+.articuloopm {
+  font-weight: 500;
+  margin-top: 1vh;
+  flex: 4;
+  margin-left: 3vh;
+}

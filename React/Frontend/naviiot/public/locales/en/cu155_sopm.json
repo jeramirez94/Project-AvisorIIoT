@@ -1,0 +1,18 @@
+{
+    "pageTitle":"Split Production Order",
+    "Order":"Order",
+    "Product":"Product",
+    "Done":"Done",
+    "toDo":"To Do",
+    "Split":"Split",
+    "Origin":"Origin",
+    "Machine":"Machine",
+    "modalDivOpmTitulo":"Split Production Order",
+    "Destination":"Destination",
+    "Quantity":"Quantity",
+    "Cancel":"Cancel",
+    "Save":"Save",
+    "Confirm":"Confirm",
+    "Send":"Send",
+    "To":"To"
+}

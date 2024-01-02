@@ -1,0 +1,1 @@
+CREATE TABLE AswSch.AswCatRelDepartamentoArea(ClaLocalidad int,ClaArea int,ClaveArea varchar(20),ClaDepartamento int,ClaveDepartamento int,FechaUltimaMod datetime)

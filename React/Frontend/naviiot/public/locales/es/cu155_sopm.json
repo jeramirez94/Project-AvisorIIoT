@@ -1,0 +1,18 @@
+{
+    "pageTitle":"Dividir Orden de Producción",
+    "Order":"Orden",
+    "Product":"Producto",
+    "Done":"Hecho",
+    "toDo":"Por Hacer",
+    "Split":"Dividir",
+    "Origin":"Origen",
+    "Machine":"Maquina",
+    "modalDivOpmTitulo":"Dividir Orden de Producción",
+    "Destination":"Destino",
+    "Quantity":"Cantidad",
+    "Cancel":"Cancelar",
+    "Save":"Guardar",
+    "Confirm":"Confirmar",
+    "Send":"Enviar",
+    "To":"A"
+}

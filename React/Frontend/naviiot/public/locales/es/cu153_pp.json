@@ -1,0 +1,15 @@
+{
+    "pageTitle":"Programa de Producción",
+    "Order":"Orden",
+    "Done":"Hecho",
+    "toDo":"Por Hacer",
+    "Start":"Iniciar",
+    "modalInicioTitulo":"Está a punto de modificar la orden de fabricación en",
+    "modalInicioCancelar":"Cancelar",
+    "modalInicioIniciar":"Iniciar Orden",
+    "ttOPM":"a la OPM",
+    "with":"con",
+    "modalExitoTitulo":"Notificacion",
+    "modalExitoMensaje":"Se inició la orden de fabricación",
+    "modalExitoAceptar":"Aceptar"
+}

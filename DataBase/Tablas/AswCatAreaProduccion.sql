@@ -1,0 +1,1 @@
+DROP TABLE [AswSch].[AswCatAreaProduccion]/*CREATE TABLE AswSch.AswCatAreaProduccion(ClaAreaProduccion int,NomAreaProduccion varchar(50),NomAreaProduccionIngles varchar(50),BajaLogica int,FechaBajaLogica datetime,FechaUltimaMod datetime,ClaUsuarioMod int,NombrePcMod varchar(64))*/

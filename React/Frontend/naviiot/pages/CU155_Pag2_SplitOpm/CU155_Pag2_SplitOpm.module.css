@@ -1,0 +1,18 @@
+.contenedoropm {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #172d46;
+    width: 100%;
+    margin-top: 1vh;
+  }
+  
+  .status {
+    color: green;
+    /* font-size: 1.5vw; */
+  }
+
+  .botonSplit {
+    width: 100%;
+    height: 100%;
+  }
+  

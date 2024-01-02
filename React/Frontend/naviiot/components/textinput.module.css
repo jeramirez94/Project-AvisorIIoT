@@ -1,0 +1,9 @@
+.kioskboard-key {
+    font-size: 200px !important; /* Ajusta el tamaño de la fuente según tus necesidades */
+    padding: 10px 20px; /* Ajusta el relleno (padding) según tus necesidades */
+}
+
+.numberInput {
+    width: 100% !important;
+    padding: 0;
+}

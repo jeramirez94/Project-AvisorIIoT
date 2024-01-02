@@ -1,0 +1,59 @@
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+        height: 100%;
+        width:  100%;
+}
+
+div#__next{
+  display: flex;
+}
+
+.dea_bg_naranja{
+  background-color: #FF6B00;
+}
+
+.dea_bg_azul{
+  background-color: #002D6F;
+}
+
+.dea_bg_naranja a{
+  color: white;
+}
+
+.dea_bg_azul a:hover{
+  color: #ee2f40;
+}
+
+.dea_txt_naranja{
+  color: #FF6B00;
+}
+.dea_txt_azul{
+  color: #002D6F;
+}
+
+.mc_bg_rojo{
+  background-color: #ee2f40 !important;
+}
+.mc_bg_azul{
+  background-color: #172d46;
+  color: white;
+}
+
+.mc_bg_azul a{
+  color: white;
+}
+
+.mc_bg_azul a:hover{
+  color: #ee2f40;
+}
+
+.mc_txt_rojo{
+  color: #ee2f40;
+}
+.mc_txt_azul{
+  color: #172d46 !important;
+  
+}

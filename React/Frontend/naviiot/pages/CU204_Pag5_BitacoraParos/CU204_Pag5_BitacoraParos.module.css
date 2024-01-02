@@ -1,0 +1,20 @@
+.contenedorPagina {
+  max-height: 80dvh;
+}
+
+.contenedorParo {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #172d46;
+  margin-top: 1vh;
+}
+
+.inputParos{
+  width: 8vw;
+  height: 5vh;
+}
+
+.checkHeader{
+  width: 8vw;
+  height: 5vh;
+}

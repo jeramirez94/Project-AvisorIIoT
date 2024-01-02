@@ -1,0 +1,17 @@
+{
+
+    "Machine":"Maquina",
+
+    "Product":"Producto",
+
+    "Compliance":"Cumplimiento",
+
+    "Speed":"Velocidad",
+
+    "Status":"Estado",
+
+    "Running":"Corriendo",
+
+    "Stopped":"Parado"
+
+}

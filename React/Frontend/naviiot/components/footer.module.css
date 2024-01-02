@@ -1,0 +1,27 @@
+.svgIcon{
+    font-size: 2rem;
+}
+
+
+.nombreUsuario{
+    font-size: .7rem;
+}
+
+.hora{
+    font-size: .7rem;
+}
+
+.barraMenu{
+    height: 3vh;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    overflow-y: hidden;
+}
+
+.footerToggler{
+    height: 4vh;
+    width: 100%;
+}

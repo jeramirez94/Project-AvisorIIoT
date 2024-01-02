@@ -1,0 +1,32 @@
+.checkbox{
+    width: 45px;
+    height: 45px;
+}
+.table{
+    height: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+.tableHeader{
+    position: sticky;
+}
+.tableBody{
+    max-height: 100%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.inputcontrollers{
+    width: 200px;
+    height: 70px;
+}
+.navitems{
+    width: 55px;
+    height: 60px;
+}

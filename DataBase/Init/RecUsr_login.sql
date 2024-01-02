@@ -1,0 +1,44 @@
+USE [master]
+GO
+CREATE LOGIN [RecUsr] WITH PASSWORD=N'D4t4R3CUsrRec', DEFAULT_DATABASE=[ASW], CHECK_EXPIRATION=ON, CHECK_POLICY=ON
+GO
+USE [ASW]
+GO
+CREATE USER [RecUsr] FOR LOGIN [RecUsr]
+GO
+USE [ASW]
+GO
+ALTER USER [RecUsr] WITH DEFAULT_SCHEMA=[AswSch]
+GO
+USE [ASW]
+GO
+ALTER ROLE [db_datawriter] ADD MEMBER [RecUsr]
+GO
+use [master]
+GO
+GRANT CONNECT SQL TO [RecUsr]
+GO
+use [ASW]
+GO
+GRANT EXECUTE ON [AswSch].[ASW_CU202_Pag2_BitProduccion_IU] TO [RecUsr]
+GO
+use [ASW]
+GO
+GRANT EXECUTE ON [AswSch].[ASW_CU204_Pag2_BitParos_IU] TO [RecUsr]
+GO
+use [ASW]
+GO
+GRANT EXECUTE ON [AswSch].[ASW_CU205_Pag1_BitVariable_IU] TO [RecUsr]
+GO
+use [ASW]
+GO
+GRANT EXECUTE ON [AswSch].[ASW_CU202_Pag4_FolioProduccion_Sel] TO [RecUsr]
+GO
+use [ASW]
+GO
+GRANT EXECUTE ON [AswSch].[ASW_CU204_Pag4_FolioParos_Sel] TO [RecUsr]
+GO
+use [ASW]
+GO
+GRANT EXECUTE ON [AswSch].[ASW_CU205_Pag4_FolioVariable_Sel] TO [RecUsr]
+GO

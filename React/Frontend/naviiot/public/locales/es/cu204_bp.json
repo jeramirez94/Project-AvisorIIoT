@@ -1,0 +1,17 @@
+{
+    "showJustificados":"Mostrar Justificados",
+    "showMicroParos":"Mostrar Micro Paros",
+    "selectAll":"Seleccionar Todos",
+    "Machine":"Maquina",
+    "Start":"Inicio",
+    "End":"Fin",
+    "Duration":"Duracion",
+    "Justify":"Justificar",
+    "pageTitle":"Paros",
+    "modalJustificacionParosTitulo":"Justificacion de Paros",
+    "Confirm":"Confirmar",
+    "Cancel":"Cancelar",
+    "actualDowntime":"Paro Actual",
+    "pendingJustification":"Justificacion Pendiente",
+    "Justification":"Justificacion"
+}

@@ -1,0 +1,18 @@
+{
+    "showJustificados":"Show Justified",
+    "showMicroParos":"Show Micro Stops",
+    "selectAll":"Select All",
+    "Machine":"Machine",
+    "Start":"Start",
+    "End":"End",
+    "Duration":"Duration",
+    "Justify":"Justify",
+    "pageTitle":"Downtimes",
+    "modalJustificacionParosTitulo":"Downtime Justification",
+    "Confirm":"Confirm",
+    "Cancel":"Cancel",
+    "actualDowntime":"Actual Downtime",
+    "pendingJustification":"Pending Justification",
+    "Justification":"Justification"
+
+}

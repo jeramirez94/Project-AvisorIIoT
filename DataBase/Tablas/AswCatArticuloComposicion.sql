@@ -1,0 +1,3 @@
+USE [ASW]
+GO
+CREATE TABLE AswSch.AswCatArticuloComposicion(IdComposicion int,ClaArticulo int,ArtComposicion1 int,ClaveArtComposicion varchar(20),NomArtComposicion varchar(250),NomArtComposicionIngles varchar(250),CantComposicion numeric(22,4),Nivel int,UnidadMedida varchar(20),UnidadMedidaIngles varchar(20),EsParaVenta tinyint,EsAlambre tinyint,BajaLogica int,FechaBajaLogica datetime,FechaUltimaMod datetime)

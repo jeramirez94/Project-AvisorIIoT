@@ -1,0 +1,9 @@
+{
+    "currentOrder": "Current Order",
+    "productionProgram": "Production Program",
+    "productionSummary": "Production Summary",
+    "productionDetail": "Production Detail",
+    "logout": "Log out",
+    "shiftConfiguration": "Shift Configuration",
+    "splitProductionOrder":"Split Production Order"
+}

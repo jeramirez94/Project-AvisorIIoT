@@ -1,0 +1,1 @@
+CREATE TABLE AswSch.AswCatArticuloGeneral(ClaArticulo int,ClaveArticulo varchar(20),NomArticulo varchar(250),NomArticuloIngles varchar(250),EspesorAltura varchar(250),EspesorAlturaIngles varchar(250),Longitud varchar(250),LongitudIngles varchar(250),CajasSkid varchar(20),Peso numeric(22,4),BajaLogica int,FechaBajaLogica datetime,FechaUltimaMod datetime)

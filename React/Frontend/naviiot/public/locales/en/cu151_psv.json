@@ -1,0 +1,13 @@
+{
+    "pageTitle":"Production Summary",
+    "Date":"Date",
+    "Shift":"Shift",
+    "PO":"PO",
+    "Product":"Product",
+    "Balance":"Balance",
+    "totalScrap":"Total Scrap",
+    "productionShift":"Production Shift",
+    "scrapShift":"Scrap Shift",
+    "Details":"Details",
+    "View":"View"
+}

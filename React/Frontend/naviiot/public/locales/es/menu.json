@@ -1,0 +1,9 @@
+{
+    "currentOrder": "Orden Actual",
+    "productionProgram": "Programa De Producción",
+    "productionSummary": "Resumen De Producción",
+    "productionDetail": "Detalle de Producción",
+    "logout": "Salir",
+    "shiftConfiguration": "Configurar turno",
+    "splitProductionOrder":"Dividir Orden de Producción"
+}

@@ -1,0 +1,80 @@
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+        height: 100%;
+        width:  100%;
+}
+
+div#__next{
+  display: flex;
+}
+
+.global_bg_primary{
+  background-color: #002D6F !important;
+  color: white !important;
+}
+
+.global_bg_secondary{
+  background-color: #FF6B00 !important;
+  color: white !important;
+}
+
+.gobal_bg_primary a{
+  color: white !important;
+}
+
+.gobal_bg_primary a:hover{
+  color: #FF6B00 !important;
+}
+
+.global_bg_secondary a{
+  color: #002D6F !important;
+}
+
+.global_bg_secondary a:hover{
+  color: #FF6B00 !important;
+}
+
+.global_txt{
+  color: #FF6B00 !important;
+}
+
+.global_txt_secondary{
+  color: #002D6F;
+}
+
+.a_primary{
+  color: #002D6F !important;
+}
+
+.a_primary:hover{
+  color: #FF6B00 !important;
+}
+
+.a_secondary{
+  color: #FF6B00 !important;
+}
+
+.a_secondary:hover{
+  color: #002D6F !important;
+}
+
+.global_btn_primary{
+  background-color: #002D6F !important;
+  color: white !important;
+}
+
+.global_btn_primary:hover{
+  background-color: #FF6B00 !important;
+}
+
+.global_btn_secondary{
+  background-color: #002D6F !important;
+  color: white !important;
+}
+
+.global_btn_secondary:hover{
+  background-color: #FF6B00 !important;
+}

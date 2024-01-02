@@ -1,0 +1,1 @@
+CREATE TABLE AswSch.AswCatTipoCelda(ClaAreaProduccion int,NomAreaProduccion varchar(50),ClaTipoCelda int,NomTipoCelda varchar(30),BajaLogica tinyint,FechaBajaLogica datetime,FechaUltimaMod datetime)

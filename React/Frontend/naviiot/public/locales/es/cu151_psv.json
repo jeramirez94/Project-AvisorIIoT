@@ -1,0 +1,13 @@
+{
+    "pageTitle":"Resumen De Producción",
+    "Date":"Fecha",
+    "Shift":"Turno",
+    "PO":"OP",
+    "Product":"Producto",
+    "Balance":"Saldo",
+    "totalScrap":"Chatarra Total",
+    "productionShift":"Turno De Producción",
+    "scrapShift":"Turno De Chatarra",
+    "Details":"Detalles",
+    "View":"Ver"
+}

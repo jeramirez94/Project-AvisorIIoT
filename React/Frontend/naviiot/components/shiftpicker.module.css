@@ -1,0 +1,7 @@
+.cardStyle{
+    height: 130%;
+    font-size: 28px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0.05em;
+}
